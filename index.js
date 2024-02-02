@@ -8,10 +8,13 @@ app.get('/',(req,res)=>{
 app.get('/test',(req,res)=>{
     res.send("Testing Docker")
 })
-
+app.get('/pipeline',(re,res)=>{
+    res.send('Pipeline Version Github Push')
+})
 const server =app.listen(8080,()=>{
     console.log("Docker Service Listening to port 8080..")
 })
+
 process.on('SIGTERM',()=>{
     server.close(()=>{
         console.log('Graceful Shutdown')
