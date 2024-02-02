@@ -1,0 +1,12 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "298639712032.dkr.ecr.ap-south-1.amazonaws.com/test-pipeline:latest",
+      "Update": "true"
+    },
+    "Ports": [
+      {
+        "ContainerPort": 8080
+      }
+    ]
+}
